@@ -9,20 +9,20 @@ public class OverPoly {
 
 			// Creating object of class 1
 			Parent a = new Parent();
-	          a.Print();
+	                a.Print();
 //
 //			// Now we will be calling print methods
 //			// inside main() method
 //
 			a = new subclass1();
 			a.Print();
-	   subclass1 b = new subclass1();
-	   b.Print();
+	                subclass1 b = new subclass1();
+	                b.Print();
 //
-//		a = new subclass2();
+//		        a = new subclass2();
 //			a.Print();
 			
-//			   System.out.println(Helper.Multiply(5.5, 6.3));
+//		        =System.out.println(Helper.Multiply(5.5, 6.3));
 		}
 	}
 		
