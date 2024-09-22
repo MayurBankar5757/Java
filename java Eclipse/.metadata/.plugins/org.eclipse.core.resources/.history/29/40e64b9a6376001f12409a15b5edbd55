@@ -1,0 +1,31 @@
+package staff;
+
+import office.utility.Emp;
+
+public class SalesManager extends Emp {
+	
+	double salesTarget;
+	double perCommission;
+	
+	
+	public SalesManager() {
+		super();
+	
+	}
+
+
+	public SalesManager(String name, int dd, int mm, int yy, int eId, double basicSalary,double salesTarget,double perCommission) {
+		super(name, dd, mm, yy, eId, basicSalary);
+		
+		this.salesTarget = salesTarget;
+		this.perCommission = perCommission;
+		
+		
+	}	
+	public String toString() {
+		
+		return "SalesTarget : "+salesTarget + " \n Percommision : "+perCommission;
+	}
+
+	
+}

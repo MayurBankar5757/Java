@@ -1,0 +1,34 @@
+package staff;
+
+import office.utility.Emp;
+import staff.SalesManager;
+import staff.Programmer;
+
+public class Test {
+	
+	
+		public  static void showMoreDetails(Emp [] e1) {
+			
+			for(int i=0; i<e1.length;i++) {
+				
+				if(e1 instanceof SalesManager) {
+					
+			     System.out.println(((SalesManager)e1).getTarget());   
+				}
+			}
+			
+		}
+		
+		public static void main(String []args) {
+			Emp [] e1 = {new SalesManager("ABC",02,02,2012,01,10000,20,10),
+					
+					new Programmer("ABC",02,02,2012,01,10000,"Auto Generate",19,2),
+					new Admin("ABC",02,02,2012,01,10000,20.0)
+		
+					};
+
+			
+			
+			
+		}
+}

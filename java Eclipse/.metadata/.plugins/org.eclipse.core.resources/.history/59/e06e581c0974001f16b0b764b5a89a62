@@ -1,0 +1,30 @@
+package builtIn;
+
+public class StringLen {
+		
+	public static void main(String []args) {
+		
+		for(int i =0; i<args.length; i++) {
+			
+			System.out.println(args[i]);
+			
+		}
+		
+//		for(int i =0; i<args.length;i++) {
+//			
+//			System.out.println(args[i]+ " :" + args[i].length());
+//		}
+		String str = "first";
+		
+		for(int i =0; i<args.length; i++) {
+			
+			if( == args[i]) {
+				
+				System.out.println("Present");
+			}
+			
+		}
+		
+		
+	}
+}

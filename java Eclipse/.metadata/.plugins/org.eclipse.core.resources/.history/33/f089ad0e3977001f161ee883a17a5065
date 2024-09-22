@@ -1,0 +1,21 @@
+package exception;
+
+public class NameValidation {
+
+
+	public static void main(String []args) {
+	
+		String fName = "Abc";
+		String lName = "Xyz";
+	
+	for(int i=0; i<fName.length(); i++) {
+		
+		c
+		if(Character.isUpperCase(fName.charAt(i))) {
+			
+		}
+		
+		
+	}
+}
+}

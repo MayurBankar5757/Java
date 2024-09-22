@@ -1,0 +1,40 @@
+package Demo;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import fileIO.Student;
+
+public class StudentDemo {
+
+	public static void main(String[] args) throws IOException {
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("Enter Student Data");
+
+		int rollno = br.read();
+		int marks = br.read();
+		String name = br.readLine();
+
+		Student s1 = new Student(rollno, name, marks);
+
+		if (s1.getMarks() > 90) {
+
+			System.out.println("Distinct");
+		}
+		if (s1.getMarks() > 80) {
+
+			System.out.println("fist class");
+		}
+		if (s1.getMarks() > 65) {
+
+			System.out.println("second");
+		}
+		if (s1.getMarks() > 50) {
+
+			System.out.println("pass");
+		}
+
+	}
+}

@@ -1,0 +1,29 @@
+package library;
+
+import office.utility.Date;
+
+public class PaperBook {
+	
+	private int numOfPages;
+	Date dateOfPublication;
+	
+	public PaperBook() {
+		
+	}
+
+	public PaperBook(int numOfPages,int dd,int mm,int yy) {
+		super();
+		this.numOfPages = numOfPages;
+		dateOfPublication = new Date(dd,mm,yy);
+	}
+	
+	public String toString () {
+		
+		return  dateOfPublication.toString()+"\n numOfPages : "+numOfPages;
+	}
+	
+	
+	
+	
+
+}

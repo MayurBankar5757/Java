@@ -1,0 +1,55 @@
+package Calculator;
+
+public class MyNumber implements BasicintOperations , AdvIntOperations {
+	int num;
+	
+	public MyNumber(int num) {
+		this.num = num;
+	}
+
+	@Override
+	public boolean isPrime(int num) {
+		
+		for(int i =2; i<num/2;i++) {
+			
+			if(num %i ==0) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	@Override
+	public double calFactorial(int num) {
+		int fact =0;
+		for( int i=0; i<num; i++) {
+			
+			fact *=i;
+			
+			
+		}
+		return fact;
+	}
+
+	@Override
+	public boolean isOdd(int num) {
+		
+		if(num %2 ==0) {
+			return false;
+		}
+		return true;
+	}
+
+	@Override
+	public boolean isEven(int num) {
+		if(num %2 ==0) {
+			return true;
+		}
+		return false;
+	}
+	
+	public static void main(String []args) {
+		
+	}
+
+}

@@ -1,0 +1,22 @@
+package exception;
+
+import CustomException.PasswordTooLongException;
+
+public class Password {
+	
+	public static void main(String [] args) {
+		String pass = "pass@123";
+		
+		try{
+			
+			if(  pass.length() < 12) {
+				throw new PasswordTooLongException();	
+			}
+			
+			
+		}
+		
+		
+	}
+
+}

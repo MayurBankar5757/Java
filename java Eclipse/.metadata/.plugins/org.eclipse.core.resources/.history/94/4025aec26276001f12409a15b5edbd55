@@ -1,0 +1,33 @@
+package staff;
+
+import office.utility.Emp;
+
+public class Programmer extends Emp {
+
+		
+		private String projectTitle;
+		private int extraHours ;
+		private double chargePerExtraHour;
+		
+		public Programmer() {
+			super();
+			
+		}
+
+		public Programmer(String name, int dd, int mm, int yy, int eId, double basicSalary,String projectTitle, int extraHours, double chargePerExtraHour) {
+			super(name, dd, mm, yy, eId, basicSalary);
+			this.projectTitle = projectTitle;
+			this.extraHours = extraHours;
+			this.chargePerExtraHour = chargePerExtraHour;
+			
+		}
+
+		public Programmer(String projectTitle, int extraHours, double chargePerExtraHour) {
+			super();
+			this.projectTitle = projectTitle;
+			this.extraHours = extraHours;
+			this.chargePerExtraHour = chargePerExtraHour;
+		}
+		
+		
+}

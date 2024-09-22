@@ -1,0 +1,47 @@
+package fileIO;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class FileIO {
+
+	private static int AlphaCount;
+
+	public static void main(String[] args) {
+		
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		int  n ;
+		System.out.println("Enter 'q' to quit" );
+		
+		int AlphCount = 0;
+		int digitCount =0;
+		
+		try {
+			while( (n = br.read()) !='q') {
+				
+				if(n >='A' || n<='Z') {
+					AlphaCount++;
+				}
+				
+				
+				
+			}
+			
+			System.out.println("AlphaCount : "+AlphaCount);
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		finally {
+			try {
+				br.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

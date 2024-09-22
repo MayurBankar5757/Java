@@ -1,0 +1,26 @@
+package exception;
+
+public class UserRegstration {
+
+	
+	public void registerUser(String userName, String userCountry) {
+		
+		
+		if(userCountry.charAt(0) != 'I'||userCountry.charAt(0) != 'i') {
+			
+		}
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+}
+

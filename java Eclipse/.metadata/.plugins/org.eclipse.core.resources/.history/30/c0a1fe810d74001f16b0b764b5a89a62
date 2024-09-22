@@ -1,0 +1,14 @@
+package office;
+
+public class Person {
+	
+	private int eId;
+	private String name;
+	
+	public Person() {
+		eId = 1;
+		name = new String("NA");
+	}
+	
+
+}

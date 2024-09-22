@@ -1,0 +1,55 @@
+package fileIO;
+
+import java.io.BufferedOutputStream;
+import java.io.BufferedReader;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class File {
+
+	public static void main(String[] args) {
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		System.out.println("Enter File Name ");
+
+		try {
+
+			FileOutputStream fos = new FileOutputStream("fName");
+
+			String fName = br.readLine();
+
+			String line;
+
+			System.out.println("Enter 'quit' to quit");
+
+			while (!(line = br.readLine()).equals("quit")) {
+
+				fos.write(line.getBytes());
+
+			}
+			
+			fos.close();
+		}
+
+		catch (IOException e) {
+
+			e.printStackTrace();
+		}
+		
+		finally {
+			
+			try {
+				br.close();
+				
+			} catch (IOException e) {
+				
+				e.printStackTrace();
+			}
+			
+		}
+
+	}
+
+}

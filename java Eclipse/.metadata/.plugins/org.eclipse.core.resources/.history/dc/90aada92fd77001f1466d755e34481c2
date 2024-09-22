@@ -1,0 +1,15 @@
+package fileIO;
+
+public class Student {
+
+	private int rollno;
+	private String name;
+	private int marks;
+	
+	public Student() {
+		
+		rollno =01;
+		name = new String("ABC");
+		marks = 00;
+	}
+}

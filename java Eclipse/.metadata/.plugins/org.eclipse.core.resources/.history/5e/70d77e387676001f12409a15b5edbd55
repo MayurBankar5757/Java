@@ -1,0 +1,47 @@
+package Calculator;
+
+public class ScientificCalculator implements iScientificCalculator {
+
+	@Override
+	public double add(int a, int b) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double substract(int a, int b) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double multiply(int a, int b) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double divide(int a, int b) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double sin(double angle) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double cos(double angle) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double tan(double angle) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

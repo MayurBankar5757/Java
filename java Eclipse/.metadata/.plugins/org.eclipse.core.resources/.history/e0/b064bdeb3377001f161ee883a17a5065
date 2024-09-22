@@ -1,0 +1,35 @@
+package exception;
+
+import CustomException.InvalidCountryException;
+
+public class UserRegstration {
+
+	
+	public void registerUser(String userName, String userCountry) {
+		
+		try {
+		if(userCountry.charAt(0) != 'I'||userCountry.charAt(0) != 'i') {
+			
+			throw new InvalidCountryException();
+		}
+		else {
+			System.out.println("User registration done Succesfully");
+		}
+		
+		}
+		catch(Exception e) {
+			System.out.println("User outside India cannot registered");
+
+			
+		}
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+}
+

@@ -1,0 +1,16 @@
+package Main;
+
+import office.Emp;
+
+
+public class EmpDemo {
+
+		public static void main(String[]args) {
+			
+			Emp e1 = new Emp();
+			
+			System.out.println(e1.toString());
+		}
+		
+		
+}

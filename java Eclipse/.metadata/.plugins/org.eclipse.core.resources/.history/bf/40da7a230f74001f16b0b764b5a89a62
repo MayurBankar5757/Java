@@ -1,0 +1,36 @@
+package office;
+
+public class Person {
+	
+
+	private String name;
+	Date dob;
+	
+	public Person() {
+		eId = 1;
+		name = new String("NA");
+	}
+	
+	public Person(int eid , String name ,int dd,int mm,int yy ) {
+		
+		this.eId = eid;
+		this.name = name;
+		dob=new Date(dd,mm,yy);
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setId(int eid) {
+		
+		this.eId = eid;
+	}
+	public String getName() {
+		
+		return name;
+	}
+	public int getId() {
+		return eId;
+	}
+
+}

@@ -1,0 +1,55 @@
+package fileIO;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class FileIO {
+
+	
+
+	public static void main(String[] args) {
+		
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		char n ;
+		System.out.println("Enter 'q' to quit" );
+		
+	
+		int digitCount =0;
+		int alphaCount =0;
+		try {
+			while( (n= (char) br.read()) !='q') {
+				
+				
+				
+				if(n >='a' || n<='z') {
+					alphaCount++;
+				}
+				else if(n >= 48 || n <= 57) {
+					
+					digitCount++;
+				}
+				
+				
+			}
+			
+			System.out.println("alphaCount : "+alphaCount);
+			System.out.println("digitCount : "+digitCount);
+
+
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		finally {
+			try {
+				br.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

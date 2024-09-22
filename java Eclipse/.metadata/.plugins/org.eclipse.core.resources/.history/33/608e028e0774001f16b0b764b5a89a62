@@ -1,0 +1,9 @@
+package builtIn;
+
+public class StringLen {
+		
+	public static void main(String []args) {
+		
+		System.out.println("Hello");
+	}
+}
