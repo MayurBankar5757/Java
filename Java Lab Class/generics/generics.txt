@@ -1,0 +1,99 @@
+Generics in more depth
+- Generic classes and methods in Java provide a way to create reusable components that can work with any data type. 
+- They enhance type safety and reusability by allowing you to specify, at compile time, the types that a class or method can work with.
+Generic Classes:
+public class MyClass<T> {
+    // Class members and methods
+}
+Here, T is a type parameter, which can be replaced by any reference type. It represents the type of data that the class will work with.
+Instantiation: 
+When you instantiate a generic class, you specify the actual type that T 
+will represent.
+MyClass<Integer> myObj = new MyClass<>();
+Here, Integer is the actual type parameter, so T will represent Integer within the MyClass instance.
+Usage: Within the generic class, you can use T as a placeholder for the type:
+public class MyClass<T> {
+    private T data;
+
+    public MyClass(T data) {
+        this.data = data;
+    }
+
+    public T getData() {
+        return data;
+    }
+}
+Here, T is used as the type of the data field and the return type of the getData() method.
+
+Generic Methods:
+Declaration: 
+public <T> void myMethod(T obj) {
+    // Method body
+}
+Here, <T> specifies that T is a type parameter for the method.
+Usage: Within the method, you can use T as a placeholder for the type of the method's arguments or return type:
+public <T> void printArray(T[] array) {
+    for (T element : array) {
+        System.out.println(element);
+    }
+}
+This method can accept arrays of any type (Integer[], String[], etc.) and print their elements.
+
+Type Inference: In most cases, Java can infer the type parameter based on the arguments passed to the method, so you often don't need to explicitly specify the type parameter when calling a generic method.
+
+
+
+In Java generics, wildcards are used to represent an unknown type or to specify restrictions on a type parameter. There are three types of wildcards: ?, ? extends, and ? super.
+
+Wildcard ?: The ? wildcard represents an unknown type. It can be used as a parameterized type in declarations, but you cannot instantiate it directly. It is often used when the exact type is not important or when dealing with collections of different types.
+java
+Copy code
+List<?> list; // List of unknown type
+Upper Bounded Wildcard ? extends: The ? extends wildcard represents a type that is a subtype of a specified type. It restricts the wildcard to accept only instances of the specified type or its subclasses.
+java
+Copy code
+List<? extends Number> list; // List of a subtype of Number
+With an upper bounded wildcard, you can read elements from the collection but cannot add elements to it (except null, which is compatible with any reference type).
+Lower Bounded Wildcard ? super: The ? super wildcard represents a type that is a supertype of a specified type. It restricts the wildcard to accept instances of the specified type or its superclasses.
+java
+Copy code
+List<? super Integer> list; // List of a supertype of Integer
+With a lower bounded wildcard, you can add elements of the specified type or its subtypes to the collection, but you cannot read elements from it (except as Object, which is compatible with any reference type).
+Wildcards in Java generics provide flexibility in working with collections of different types while maintaining type safety. They allow you to write more generic code that can operate on a wider range of types, making your code more reusable and adaptable.
+
+
+
+Wildcard ?:
+java
+
+// Method that accepts a list of any type
+public void printList(List<?> list) {
+    for (Object o : list) {
+        System.out.println(o);
+    }
+}
+This method printList accepts a list of any type using the wildcard ?. It can be called with a List<Integer>, List<String>, or any other type of list.
+Upper Bounded Wildcard ? extends:
+
+// Method that accepts a list of numbers or its subtypes
+public double sumOfList(List<? extends Number> list) {
+    double sum = 0;
+    for (Number n : list) {
+        sum += n.doubleValue();
+    }
+    return sum;
+}
+This method sumOfList accepts a list of numbers or its subtypes (e.g., Integer, Double, etc.). It can be called with a List<Integer>, List<Double>, or any other subtype of Number.
+Lower Bounded Wildcard ? super:
+java
+Copy code
+// Method that adds integers to a list
+public void addIntegers(List<? super Integer> list) {
+    list.add(10);
+    list.add(20);
+}
+This method addIntegers adds integers to a list or its supertypes (e.g., Number, Object). It can be called with a List<Integer>, List<Number>, List<Object>, or any supertype of Integer.
+These examples demonstrate how wildcards can be used to write more flexible and generic code in Java generics, allowing methods to accept and work with collections of different types while maintaining type safety.
+
+
+
