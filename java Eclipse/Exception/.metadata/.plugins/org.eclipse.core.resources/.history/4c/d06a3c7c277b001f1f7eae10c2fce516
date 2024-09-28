@@ -1,0 +1,13 @@
+package entity;
+
+public class Mail {
+	
+	private long mailId;
+	private String from;
+	private String subject;
+	private String body;
+	private LocalDateTime rec_time;
+	
+	
+
+}

@@ -1,0 +1,24 @@
+package demo;
+
+import java.util.Set;
+import java.util.TreeSet;
+
+import entity.Emp;
+
+public class EmpDemo {
+	
+	public static void main(String []args) {
+		
+		Set <Emp> e = new TreeSet<>();
+		
+		e.add(new Emp(1,"Suraj",10000));
+		e.add(new Emp(2,"Aditya",20000));
+		e.add(new Emp(3,"Rohan",30000));
+		e.add(new Emp(1,"shubham",4000));
+		e.add(new Emp(1,"Onkar",400000));
+
+		
+		
+	}
+
+}

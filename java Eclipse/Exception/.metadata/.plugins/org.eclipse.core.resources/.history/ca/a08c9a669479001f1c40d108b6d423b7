@@ -1,0 +1,59 @@
+package fileIO;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class MaxChar {
+
+	public static void main(String[] args) {
+	}
+
+	BufferedReader br = null;
+	
+	try
+	{
+		br = new BufferedReader(new InputStreamReader(System.in));
+		String FileName = br.readLine();
+//	FileInputStream fis = new FileInputStream(FileName);// read from file
+
+		br = new BufferedReader(new FileReader(FileName));
+
+		String line;
+		String maxLine =0;
+		int max=0;
+		while ((line = br.readLine()) != null) {
+			
+			if(max < line.length()) {
+				maxLine = line;
+			}
+				
+			}
+		System.out.println("MaxLine : "+line);
+			
+		}
+
+	}catch(
+	FileNotFoundException e)
+	{
+
+		e.printStackTrace();
+	}catch(
+	Exception e)
+	{
+
+		e.printStackTrace();
+	}finally
+	{
+		try {
+			br.close();
+		} catch (IOException e) {
+
+			e.printStackTrace();
+		}
+
+	}
+
+}}

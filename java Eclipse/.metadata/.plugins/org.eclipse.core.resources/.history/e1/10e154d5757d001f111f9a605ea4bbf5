@@ -1,0 +1,25 @@
+package Entity;
+
+public class PrintingJob  implements Runnable {
+	
+	private Thread t;
+	private String header;
+	private String body;
+	private String footer;
+	
+	public PrintingJob(String header, String body,String footer) {
+		
+		this.header = header;
+		this.body = body;
+		this.footer = footer;
+		
+		t = new Thread(this);
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

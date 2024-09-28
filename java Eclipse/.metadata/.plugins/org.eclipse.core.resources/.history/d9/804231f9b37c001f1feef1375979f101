@@ -1,0 +1,14 @@
+package Entity;
+
+public class PrimeThread {
+
+	private int start;
+	private int end;
+	
+	public PrimeThread(int start,int end) {
+		
+		this.start = start;
+		this.end = end;
+		
+	}
+}

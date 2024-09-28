@@ -1,0 +1,36 @@
+package demo;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import entity.Customer;
+
+public class CustomerDemo {
+	
+	public static void main(String[]args) throws IOException {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		Customer [] c = new Customer[5];
+		
+		String name ="";
+		 String emailId;
+		 int contactno;
+		 
+		
+		for(int i=0; i<5; i++) {
+			
+		 name = br.readLine();
+		 emailId = br.readLine();
+		 contactno = Integer.parseInt(br.readLine());
+		 
+		 c[i] = new Customer(name,emailId,contactno);
+		 
+		 
+		}
+		
+		
+	}
+
+}

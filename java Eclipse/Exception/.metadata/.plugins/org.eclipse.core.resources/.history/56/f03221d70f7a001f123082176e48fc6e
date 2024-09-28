@@ -1,0 +1,11 @@
+package fileIO;
+
+public class Student1 {
+
+	private Course course;
+	private String PRN;
+	private transient int age;
+	
+	
+	
+}

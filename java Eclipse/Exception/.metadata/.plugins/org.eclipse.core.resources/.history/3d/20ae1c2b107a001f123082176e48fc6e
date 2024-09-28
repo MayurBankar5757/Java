@@ -1,0 +1,8 @@
+package fileIO;
+
+public class Person {
+	
+	private String name;
+	
+
+}

@@ -1,0 +1,27 @@
+package demo;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+public class Customer2Demo {
+	
+	public static void main(String [] args) {
+		
+		Set <Customer> c = new LinkedHashSet<>();
+		
+		c.add(new Customer(7500,"CCC"));
+		c.add(new Customer(1200,"GGG"));
+		c.add(new Customer(14300,"BBB"));
+		c.add(new Customer(1500,"AAA"));
+		c.add(new Customer(21000,"DDD"));
+		c.add(new Customer(1900,"EEE"));
+		c.add(new Customer(1000,"FFF"));
+		c.add(new Customer(7500,"CCC"));
+
+//		for(Customer s:c) {
+//			System.out.println(s);
+//		}
+	System.out.println(c);
+	}
+
+}

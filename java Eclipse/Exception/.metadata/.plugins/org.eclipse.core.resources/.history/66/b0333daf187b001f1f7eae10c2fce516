@@ -1,0 +1,28 @@
+package entity;
+
+public class Student {
+	
+	private int studId;
+	private String name;
+	private String city;
+	private float percentage;
+	
+	
+	public Student(int studId, String name, String city, float percentage) {
+		super();
+		this.studId = studId;
+		this.name = name;
+		this.city = city;
+		this.percentage = percentage;
+	}
+
+
+	@Override
+	public String toString() {
+		
+		return "Student [studId=" + studId + ", name=" + name + ", city=" + city + ", percentage=" + percentage + "]";
+	}
+	
+	
+
+}

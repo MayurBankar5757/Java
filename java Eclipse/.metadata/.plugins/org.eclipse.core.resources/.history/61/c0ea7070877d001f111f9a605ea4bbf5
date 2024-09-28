@@ -1,0 +1,30 @@
+package Demo;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import Entity.Divisors;
+
+public class DivisorsDemo {
+
+	public static void main(String []args) {
+		
+		
+		
+		try {
+			BufferedWriter br = new BufferedWriter(new FileWriter("D:\\know-it\\Divisor.txt"));
+			Divisors d1 = new Divisors(32,br);
+			Divisors d2 = new Divisors(45,br);
+			Divisors d3 = new Divisors(45,br);
+			d1.getT().start();
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+	}
+}

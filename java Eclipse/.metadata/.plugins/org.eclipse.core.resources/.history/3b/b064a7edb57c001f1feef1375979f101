@@ -1,0 +1,13 @@
+package Demo;
+
+import Entity.PrimeThread;
+
+public class PrimeThreadDemo {
+
+	public static void main(String []args) {
+		
+		PrimeThread p = new PrimeThread(1,100);
+		
+		p.getT().start();
+	}
+}

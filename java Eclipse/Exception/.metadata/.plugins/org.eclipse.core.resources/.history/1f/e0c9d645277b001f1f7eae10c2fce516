@@ -1,0 +1,19 @@
+package entity;
+
+public class LocalDateTime {
+
+	private int dd;
+	private int mm;
+	private int yy;
+	
+	
+	public LocalDateTime(int dd, int mm, int yy) {
+		super();
+		this.dd = dd;
+		this.mm = mm;
+		this.yy = yy;
+	}
+	
+	
+	
+}

@@ -1,0 +1,9 @@
+package Demo;
+
+public class PrimeThreadDemo {
+
+	public static void main(String []args) {
+		
+		
+	}
+}

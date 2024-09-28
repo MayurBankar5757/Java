@@ -1,0 +1,9 @@
+package Entity;
+
+public class Stock {
+	
+	int qtyProduced;
+	int qtyconsumed;
+	boolean bProduced;
+
+}

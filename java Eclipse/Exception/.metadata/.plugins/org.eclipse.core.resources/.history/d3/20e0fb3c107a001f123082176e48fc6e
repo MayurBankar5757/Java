@@ -1,0 +1,12 @@
+package fileIO;
+
+import java.io.Serializable;
+
+public class Course implements Serializable
+{
+
+	private int courseId;
+	private String courseName;
+	private double fees;
+	
+}

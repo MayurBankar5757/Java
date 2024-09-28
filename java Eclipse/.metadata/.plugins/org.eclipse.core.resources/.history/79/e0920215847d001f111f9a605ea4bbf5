@@ -1,0 +1,24 @@
+package Demo;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+import Entity.Divisors;
+
+public class DivisorsDemo {
+
+	public static void main(String []args) {
+		FileWriter br = null;
+		
+		try {
+			br = new FileWriter("D:\\know-it\\Divisor.txt");
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		
+		Divisors d = new Divisors(32,br);
+		
+		d.getT().start();
+	}
+}

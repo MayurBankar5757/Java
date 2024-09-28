@@ -1,0 +1,38 @@
+package Entity;
+
+public class Stock {
+	
+	int qtyProduced;
+	int qtyConsumed;
+	boolean bProduced;
+
+	public synchronized void produce() {
+		//qtyProduced++; qtyProduced increases
+		if(bProduced) {
+			try {
+				
+				this.wait();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		//bProduced = false
+		qtyProduced++;
+		System.out.println("Produced : "+qtyProduced);
+		bProduced = true;
+		notify();     //waiting for producer to finish its task
+	}
+	
+	public synchronized void consume() {
+		
+		if(!bProduced) {}
+		try {
+			this.wait();
+		}
+		catch(InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		qtyConsumed++;
+	}
+}

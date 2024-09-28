@@ -1,0 +1,44 @@
+package Demo;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+import fileIO.Emp;
+
+public class EmpDemo  implements Serializable {
+	public static void main(String []args) throws Exception {
+		
+
+		Emp [] emp = new Emp[2];
+		
+		emp[0] = new Emp(01,"suraj",11,11,2000,23);
+		
+		emp[1] = new Emp(02,"aniket",12,12,2012,23);
+		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("D:\\know-it\\javatext.dat"));
+
+		
+		try  {
+//			ObjectOutputStream oos1 = new ObjectOutputStream(new FileOutputStream("D:\\know-it\\javatext.dat"));
+			
+			for(Emp e:emp) {
+				
+				oos1.writeObject(e);
+			}
+			
+			
+			
+			
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+		
+	}
+
+}

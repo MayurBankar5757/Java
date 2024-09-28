@@ -1,0 +1,22 @@
+package Demo;
+
+import fileIO.Emp;
+
+public class EmpDemo {
+	public static void main(String []args) {
+		
+
+		Emp [] arr = new Emp[2];
+		
+		 = new Emp(01,"suraj",11,11,2000,23);
+		
+		Emp e2 = new Emp(02,"aniket",12,12,2012,23);
+		
+		
+		
+		
+		
+		
+	}
+
+}

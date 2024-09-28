@@ -1,0 +1,50 @@
+package demo;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+
+public class CollectionDemo {
+	
+	public static void main(String []args) throws IOException {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		List<String> l = new ArrayList<> ();
+		String line;
+		System.out.println("Enter Elements to add");
+		
+		for(int i =0; i<5; i++) {
+			
+			l.add(br.readLine());
+		}
+		
+		
+		
+		for(String i :l) {
+			System.out.println(i);
+			
+		}
+		
+		System.out.println("Enter element index to remove");
+		int index;
+		
+		index = br.read();
+		
+		
+	System.out.println(l.remove(index););	
+		
+		for(String i :l) {
+			System.out.println(i);
+			
+		}
+		
+		
+		
+		
+		
+		
+	}
+}

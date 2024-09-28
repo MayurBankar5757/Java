@@ -1,0 +1,12 @@
+package Demo;
+
+import Entity.Divisors;
+
+public class DivisorsDemo {
+
+	public static void main(String []args) {
+		
+		Divisors d = new Divisors(32);
+		d.getT().start();
+	}
+}

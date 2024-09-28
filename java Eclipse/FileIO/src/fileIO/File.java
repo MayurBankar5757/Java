@@ -9,6 +9,8 @@ import java.io.InputStreamReader;
 
 public class File {
 
+	
+
 	public static void main(String[] args) {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -18,8 +20,8 @@ public class File {
 		try {
 
 			String FileName = br.readLine();
-			FileOutputStream fos = new FileOutputStream(FileName);
-			FileInputStream fis = new FileInputStream(FileName);
+			FileOutputStream fos = new FileOutputStream(FileName); // write in file
+			FileInputStream fis = new FileInputStream(FileName);// read from file
 
 			
 

@@ -1,0 +1,13 @@
+package fileIO;
+
+import java.io.Serializable;
+
+public class Student1 implements Serializable{
+
+	private Course course;
+	private String PRN;
+	private transient int age;
+	
+	
+	
+}

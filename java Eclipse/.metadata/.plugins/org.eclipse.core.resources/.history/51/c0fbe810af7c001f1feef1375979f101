@@ -1,0 +1,14 @@
+package Demo;
+
+import Entity.CountTread;
+
+public class CountDemo {
+
+	public static void main(String []args) {
+		
+		CountTread r = new CountTread(500,"first");
+		
+		r.getT().start();;
+		
+	}
+}

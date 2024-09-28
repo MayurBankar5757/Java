@@ -1,0 +1,44 @@
+package Demo;
+
+import Entity.PrimeThread;
+
+public class PrimeThreadDemo {
+
+	public static void main(String []args) {
+		
+		
+		
+		PrimeThread p = new PrimeThread(3,100);
+		
+		p.getT().start();
+		
+		Thread t = new Thread(() ->{
+			boolean flag = false;
+			
+			System.out.println("Prime Numbers : ");
+			for(int i=1; i<100; i++) {
+				
+				for(int j =2; j<i/2; j++) {
+					
+					if(i<3) {
+						flag = false;
+						break;
+					}
+					else if(i%j != 0) {
+						flag = true;
+						break;
+					}
+					else {
+						flag = false;
+						break;
+					}
+					
+				}
+				
+				if(flag) {
+					System.out.println(i);
+				}
+			}
+		});
+	}
+}

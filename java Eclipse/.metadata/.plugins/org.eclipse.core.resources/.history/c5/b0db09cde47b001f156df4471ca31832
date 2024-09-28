@@ -1,0 +1,24 @@
+package demo;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapDemo {
+
+	public static void main(String[] args) {
+		
+		Map <Integer,String> map = new HashMap<>();
+		
+		map.put(1, "Suraj");
+		map.put(2, "Vishal");
+		map.put(3, "Ajay");
+		map.put(4, "Akshay");
+		map.put(5, "sanket");
+		map.put(6, "Suraj");
+		map.put(7, "Suraj");
+		map.put(8, null);
+
+		
+	}
+
+}

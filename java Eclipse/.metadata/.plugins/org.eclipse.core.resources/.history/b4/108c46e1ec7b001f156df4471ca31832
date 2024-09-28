@@ -1,0 +1,27 @@
+package entity;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Domains {
+
+	public static void main(String []args) {
+		
+		try {
+			BufferedReader br = new BufferedReader(new FileReader("D:\\Know-it\\emails.txt"));
+			int n;
+			System.out.println("line");
+			
+			while((n= br.read())!= -1) {
+				System.out.println((br.readLine()));
+				
+			}
+			
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		
+	}
+}

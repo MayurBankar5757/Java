@@ -1,0 +1,17 @@
+package Demo;
+
+import java.io.FileWriter;
+
+import Entity.Divisors;
+
+public class DivisorsDemo {
+
+	public static void main(String []args) {
+		
+		br = new FileWriter("D:\\know-it\\Divisor.txt");
+		
+		Divisors d = new Divisors(32);
+		
+		d.getT().start();
+	}
+}

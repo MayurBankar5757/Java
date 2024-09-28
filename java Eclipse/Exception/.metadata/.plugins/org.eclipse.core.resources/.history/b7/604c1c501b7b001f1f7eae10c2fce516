@@ -1,0 +1,24 @@
+package entity;
+
+public class Emp {
+
+	private int empId;
+	private String name;
+	private int salary;
+	
+	
+	public Emp(int empId, String name, int salary) {
+		super();
+		this.empId = empId;
+		this.name = name;
+		this.salary = salary;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Emp [empId=" + empId + ", name=" + name + ", salary=" + salary + "]";
+	}
+	
+	
+}

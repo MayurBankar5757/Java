@@ -1,0 +1,17 @@
+package demo;
+
+import java.io.BufferedReader;
+import java.io.FileOutputStream;
+import java.io.InputStreamReader;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+
+public class SeparateList {
+
+	public static void main(String[]args) {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+
+	}
+}

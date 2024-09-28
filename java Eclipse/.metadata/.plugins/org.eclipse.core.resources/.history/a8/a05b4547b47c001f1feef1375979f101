@@ -1,0 +1,36 @@
+package Entity;
+
+public class PrimeThread implements Runnable {
+
+	private int start;
+	private int end;
+	
+	public PrimeThread(int start,int end) {
+		
+		this.start = start;
+		this.end = end;
+		
+	}
+
+	@Override
+	public void run() {
+		
+		for(int i=start ; i<end; i++) {
+		
+			
+			for(int j=2; j< i/2; j++) {
+				
+				if(i %j ==0) {
+					System.out.println(i);
+					break;
+				}
+			}
+		}
+		
+		
+		
+	}
+	
+	
+	
+}
